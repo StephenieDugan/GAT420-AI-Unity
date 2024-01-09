@@ -10,4 +10,6 @@ public abstract class AIPerception : MonoBehaviour
     public string TagName { get { return tagName; } }
     public float Distance { get { return distance; } }
     public float MaxAngle { get { return maxAngle; } }
+
+    public abstract GameObject[] GetGameObjects();
 }
