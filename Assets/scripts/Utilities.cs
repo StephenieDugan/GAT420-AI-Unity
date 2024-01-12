@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Utilities : MonoBehaviour
+public class Utilities
 {
     public static float Wrap(float value, float min, float max)
     {
