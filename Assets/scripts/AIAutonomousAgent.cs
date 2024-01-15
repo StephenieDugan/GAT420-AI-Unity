@@ -17,6 +17,7 @@ public class AIAutonomousAgent : AIAgent
         if(gameObjects.Length > 0 )
         {
             movement.ApplyForce(Seek(gameObjects[0]));
+                Debug.DrawLine(transform.position, gameObjects[0].transform.position);
         }
 
         }
