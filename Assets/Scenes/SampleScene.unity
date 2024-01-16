@@ -5642,6 +5642,9 @@ MonoBehaviour:
   tagName: Agent02
   distance: 5
   maxAngle: 45
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &3997871722666715705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5658,6 +5661,7 @@ MonoBehaviour:
   seekPerception: {fileID: 0}
   fleePerception: {fileID: 0}
   flockPerception: {fileID: 0}
+  obstaclePerception: {fileID: 0}
 --- !u!1001 &4547389020976262475
 PrefabInstance:
   m_ObjectHideFlags: 0

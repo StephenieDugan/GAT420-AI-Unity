@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -329019589438140291}
   - component: {fileID: 898512975625471189}
   - component: {fileID: 7635556170102257122}
+  - component: {fileID: -4444200542029770185}
   m_Layer: 0
   m_Name: AutonomousAgent01
   m_TagString: Agent01
@@ -54,6 +55,7 @@ MonoBehaviour:
   seekPerception: {fileID: 4198564914415802248}
   fleePerception: {fileID: 898512975625471189}
   flockPerception: {fileID: -329019589438140291}
+  obstaclePerception: {fileID: -4444200542029770185}
 --- !u!114 &6037357900453070634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +87,9 @@ MonoBehaviour:
   tagName: Agent01
   distance: 5
   maxAngle: 45
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &-329019589438140291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +105,9 @@ MonoBehaviour:
   tagName: Agent01
   distance: 5
   maxAngle: 180
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &898512975625471189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +123,9 @@ MonoBehaviour:
   tagName: Agent02
   distance: 5
   maxAngle: 180
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!135 &7635556170102257122
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -136,6 +147,25 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.2
   m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &-4444200542029770185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027441085999632468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80f9e776a6b355041a7c702962293fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagName: 
+  distance: 5
+  maxAngle: 80
+  layermask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  numRaycast: 8
 --- !u!1001 &6342744858986719421
 PrefabInstance:
   m_ObjectHideFlags: 0
