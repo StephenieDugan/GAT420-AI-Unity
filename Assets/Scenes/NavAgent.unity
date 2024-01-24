@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agents:
-  - {fileID: 0}
+  - {fileID: -281476009220131557, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
   layerMask:
     serializedVersion: 2
     m_Bits: 0
@@ -989,6 +989,30 @@ PrefabInstance:
     - target: {fileID: -4933104536489709512, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
       propertyPath: m_Radius
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2675236738303129321, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: endNode
+      value: 
+      objectReference: {fileID: 671317219}
+    - target: {fileID: 2675236738303129321, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: pathType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2675236738303129321, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: startNode
+      value: 
+      objectReference: {fileID: 1771500993}
+    - target: {fileID: 3910052013029211736, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910052013029211736, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910052013029211736, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3910052013029211736, guid: be4f8b492fe83474699fd55fab9b0d4f, type: 3}
       propertyPath: m_LocalPosition.x
