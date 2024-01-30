@@ -20,7 +20,7 @@ public class AIAgentSpawner : MonoBehaviour
             // get ray from camera to screen position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             // raycast and see if it hits an object with layer
-            if (Physics.Raycast(ray, out RaycastHit hitInfo, 100, layerMask))
+            if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, layerMask)) 
             {
                 // spawn agent at hit point and random rotation
                 Instantiate(agents[index], hitInfo.point, Quaternion.AngleAxis(Random.Range(0, 360), Vector3.up));

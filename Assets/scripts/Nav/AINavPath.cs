@@ -64,7 +64,7 @@ public class AINavPath : MonoBehaviour
 	private AINavNode getNextPathAINavNode(AINavNode node)
 	{
 		if(path.Count == 0) return node;
-
+		agent.GetComponent<AIKinematicMovement>().maxForce = 1;
 		int index = path.FindIndex(pathNode => pathNode == node);
 
 		if(index == -1 ||index+1 == path.Count) return null;

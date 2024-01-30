@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761e7d99fccaaf04c8d74a0c96120e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: -281476009220131557}
   pathType: 2
 --- !u!114 &-6329419910128232946
 MonoBehaviour:
@@ -134,8 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   minSpeed: 5
-  maxForce: 50
-  turnRate: 90
+  maxForce: 1
+  turnRate: 360
 --- !u!95 &1762461130022071081
 Animator:
   serializedVersion: 5
