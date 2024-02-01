@@ -34,6 +34,7 @@ public class AINavMeshMovement : AIMovement
 
 	public override void MoveTowards(Vector3 target)
 	{
+		
 		navMeshAgent.SetDestination(target);
 	}
 
