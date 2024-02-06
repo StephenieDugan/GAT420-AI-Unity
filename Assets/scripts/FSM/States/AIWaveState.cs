@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIAttackState : AIState
+public class AIWaveState : AIState
 {
     float timer = 0;
-    public AIAttackState(AIStateAgent agent) : base(agent)
+    public AIWaveState(AIStateAgent agent) : base(agent)
     {
     }
 
@@ -18,7 +18,7 @@ public class AIAttackState : AIState
     {
         if (Time.time > timer)
         {
-            agent.stateMachine.SetState(nameof(AIChaseState));
+            agent.stateMachine.SetState(nameof(AIIdleState));
         }
     }
 

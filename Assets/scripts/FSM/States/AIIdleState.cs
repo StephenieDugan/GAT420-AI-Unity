@@ -29,7 +29,7 @@ public class AIIdleState : AIState
 
         if (enemies.Length > 0)
         {
-            agent.stateMachine.SetState(nameof(AIAttackState));
+            agent.stateMachine.SetState(nameof(AIChaseState));
         }
     }
 }
